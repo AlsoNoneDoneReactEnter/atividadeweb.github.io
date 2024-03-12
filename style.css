@@ -155,7 +155,20 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block; /* Exibe o conteúdo da aba ativa */
 }
+/* --------------Formação-------------*/
+#formacao{
+    padding: 30px 0;
+}
+.education ul li{
+    list-style: none;
+    margin: 10px 30px;  
+    display: inline-block; 
+}
 
+.education ul li span{
+    color: #b54769; /* Define a cor do texto como rosa */
+    font-size: 26px;
+}
 /* Estilos da seção "Portfólio" */
 #portifolio{
     padding: 50x 0; /* Adiciona preenchimento à seção "Portfólio" */
@@ -322,42 +335,54 @@ footer i {
 }
 
 /* -----------css for small screen----------- */
-nav .fas{
-    display: none;
-}
 
-@media only screen and (max-with: 600px){
-    #header{
-        background-image: url(/images/phone-background.png);
+@media only screen and (max-width: 768px) {
+    /* Ajuste o tamanho da fonte do cabeçalho */
+    .header-text {
+        font-size: 24px;
     }
-    .header-text{
-        margin-top: 100%;
+    .header-text h1 {
+        font-size: 40px;
+    }
+    /* Faça a logo do cabeçalho ocupar menos espaço */
+    .logo {
+        width: 100px;
+    }
+    /* Faça a navegação ocupar a largura total da tela */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    /* Reduza o tamanho das imagens no "Sobre Mim" */
+    .about-col-1 img {
+        border-radius: 10px;
+    }
+    /* Ajuste o tamanho da fonte dos títulos das abas */
+    .tab-titles {
+        margin: 20px 0;
+    }
+    .tab-links {
         font-size: 16px;
     }
-    .header-text h1{
-        font-size: 30px;
+    /* Faça os itens da lista no "Portfólio" ocuparem toda a largura disponível */
+    .port-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-    nav .fas{
-        display: block;
-        font-size: 25px;
+    /* Ajuste o tamanho das imagens no "Portfólio" */
+    .port img {
+        border-radius: 5px;
     }
-    nav ul{
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+    /* Faça o formulário de contato ocupar a largura total */
+    .contact-right form input,
+    .contact-right form textarea {
+        width: 100%;
     }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
+    /* Ajuste o tamanho da fonte e o espaçamento no rodapé */
+    footer p {
+        font-size: 12px;
+        margin: 10px 0;
     }
 }

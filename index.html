@@ -22,9 +22,8 @@
             <nav>
                 <img src="images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#formacao">Formação</a></li>
                     <li><a href="#portifolio">Portifolio</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
@@ -58,21 +57,15 @@
 
                     <!-- Abas para exibir informações -->
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('education')">Formação</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experiência</p>
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+
                     </div>
 
                     <!-- Conteúdo das abas -->
 
-                    <div class="tab-contents active-tab" id="education">
-                        <ul>
-                            <li><span>2023 - 2026</span><br>Análise e desenvolvimento de Sistemas - Uninter</li>
-                            <li><span>2022</span><br>Técnico em Redes de Computadores</li>
-                        </ul>
-                    </div>
 
-                    <div class="tab-contents" id="skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Figma App interfaces</li>
                             <li><span>Web Development</span><br>Web App development</li>
@@ -80,18 +73,28 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents active-tab" id="experience">
                         <ul>
                             <li><span>2023 - Current</span><br>Jovem Aprendiz - Auxiliar Administrativo</li>
                         </ul>
                     </div>
-
-                    
                 </div>
             </div>
         </div>
     </div>
-
+    <!------------------Formação----------------->
+<div id="formacao">
+    <div class="container">
+        <div class="sub-title">Formação</div>
+            <div class="education" id="formacao">
+                <ul>
+                    <li><span>2023 - 2026</span><br> SENAI - Técnico de Redes de Computadores</li>
+                    <li><span>2022</span><br> UNINTER - Análise e Desenvolvimento de Sistemas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Portfólio -->
     <div id="portifolio">
         <div class="container">
