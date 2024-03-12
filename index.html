@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Definições do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal </title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícone da página -->
+    <link rel="icon" href="/images/logouninter.jpg">
+    <!-- Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/1e69eb8a8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div id="header">
+        <div class="container">
+            <!-- Navegação -->
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#portifolio">Portifolio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Texto de introdução -->
+            <div class="header-text">
+                <p>Estudante De Análise de Sistemas</p>
+                <h1>Olá, eu sou<span> André</span> Bezerra<br> Futuro Desenvolvedor.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre Mim -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/andre.jpeg">
+                </div>
+
+                <div class="about-col-2">
+                    <section id="sobre">
+                        <h1 class="sub-title">Sobre Mim</h1>
+                    </section>
+                    <!-- Informações pessoais -->
+                    <p>Meu nome é André, Tenho 19 anos e Desejo me Tornar um Desenvolvedor Mobile</p>
+                    <p>Gosto de Ouvir Música e Jogar Nas Horas Vagas
+                    <p>Tenho interesse por diversos idiomas</p>
+                    <p>Atualmente estou aprendendo a tocar teclado</p>
+                    </p>
+
+                    <!-- Abas para exibir informações -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Formação</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiência</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <!-- Conteúdo das abas -->
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2023 - 2026</span><br>Análise e desenvolvimento de Sistemas - Uninter</li>
+                            <li><span>2022</span><br>Técnico em Redes de Computadores</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Figma App interfaces</li>
+                            <li><span>Web Development</span><br>Web App development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Jovem Aprendiz - Auxiliar Administrativo</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfólio -->
+    <div id="portifolio">
+        <div class="container">
+            <h1 class="sub-title">Portifólio</h1>
+            <!-- Lista de projetos -->
+            <div class="port-list">
+                <!-- Projeto 1 -->
+                <div class="port">
+                    <img src="/images/dino.png">
+                    <div class="layer">
+                        <h3>Adote um Dinossauro</h3>
+                        <p>Adote um pet e cuide dele!</p>
+                        <a href="https://www.figma.com/proto/MRSBE4kB5pgnKbfNoF0M4x/Dino4U?page-id=0%3A1&type=design&node-id=1-8&viewport=1478%2C701%2C0.9&t=fmUXYuDHzbw2cDq0-1&scaling=min-zoom&mode=design" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="port">
+                    <img src="/images/todo.png">
+                    <div class="layer">
+                        <h3>TAREFAS.LIST - Protótipo</h3>
+                        <p>To do list App - Controle sua agenda e suas tarefas!</p>
+                        <a href="https://www.figma.com/proto/0FP4Ax8kDXbPGCpNGTQf5w/Tarefas.List?page-id=0%3A1&type=design&node-id=1-148&viewport=1478%2C673%2C0.81&t=oMiNPIzzwkLti0pU-1&scaling=min-zoom&mode=design" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="port">
+                    <img src="/images/ifoodp.png">
+                    <div class="layer">
+                        <h3>iFood Clone</h3>
+                        <p>Simule uma compra no iFood!</p>
+                        <a href="https://www.figma.com/proto/vSVZ1TKttNeSFU9XBdyplq/iFood-Clone?page-id=0%3A1&node-id=1-98&scaling=scale-down&mode=design&t=qVDPHI2JzyIG1Wd8-1" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contato -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contato</h1>
+                    <!-- Informações de contato -->
+                    <p><i class="fa-solid fa-paper-plane"></i> andrebezerracomercial@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 21 99599-7957</p>
+                    <!-- Ícones de redes sociais -->
+                    <div class="social-icons" id="icon">
+                        <a href="#icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#icon"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/andr%C3%A9-bezerra-323807295/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Formulário de contato -->
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright by André. Feito para fins educacionais. </p>
+        </div>
+    </footer>
+
+    <!-- Script para alternar entre abas -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+</body>
+
+</html>
